@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Gamepad2, Users, Volume2, VolumeX } from 'lucide-react';
+import { Gamepad2, Users, Volume2, VolumeX, Heart } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 // Componente Steam Icon
@@ -113,41 +113,50 @@ const Home = () => {
       </section>
 
       {/* Games Section */}
-      <section className="py-20 px-4 bg-gray-900">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Games</h2>
-          <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
-            <Link to="/games/stink" className="block">
-              <img 
-                src="/images/stink-logo.png" 
-                alt="STINK!" 
-                className="max-w-xs mx-auto mb-6 hover:scale-105 transition-transform duration-300"
-              />
-            </Link>
-            <p className="text-gray-300 mb-6 text-center">
-              A comedic survival-action shooter that dares to be bold, hilarious, and disgustingly fun. Face hordes of bathroom-themed monsters using outrageous abilities!
-            </p>
-            <div className="grid md:grid-cols-3 gap-6">
-              <Feature 
-                icon={<Gamepad2 className="w-8 h-8" />}
-                title="Hilarious Gameplay"
-                description="STINK! is a comedic survival-action game where players use hilarious and disgusting abilities to fight off hordes of bathroom-themed monsters. The game combines resource management, skill upgrades, and character progression, culminating in an epic boss fight after a set survival time."
-              />
-              <Feature 
-                icon={<Users className="w-8 h-8" />}
-                title="Deep Storyline"
-                description="A surreal journey of self-discovery. Alessandro, burdened by betrayals and anger, is pulled into a surreal world where hostile toilets embody his deepest fears. Armed with unlikely tools, he must fight through this twisted reality, confronting the pain that has consumed him."
-              />
-              <Feature 
-                icon={<SteamIcon />}
-                title="Wishlist on Steam"
-                description="Add to your wishlist and get notified on release"
-                link="https://store.steampowered.com/app/YOUR_APP_ID"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+<section className="py-20 px-4 bg-gray-900">
+  <div className="max-w-6xl mx-auto">
+    <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Games</h2>
+    <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
+      <Link to="/games/stink" className="block">
+        <img 
+          src="/images/stink-logo.png" 
+          alt="STINK!" 
+          className="max-w-xs mx-auto mb-6 hover:scale-105 transition-transform duration-300"
+        />
+      </Link>
+      <p className="text-gray-300 mb-6 text-center">
+        A comedic survival-action shooter that dares to be bold, hilarious, and disgustingly fun. Face hordes of bathroom-themed monsters using outrageous abilities!
+      </p>
+      <div className="flex justify-center mb-8">
+        <a 
+          href="https://store.steampowered.com/app/YOUR_APP_ID" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#171a21] hover:bg-[#2a475e] text-white px-6 py-2 rounded-full transition-colors"
+        >
+          Wishlist on Steam
+        </a>
+      </div>
+      <div className="grid md:grid-cols-3 gap-6">
+        <Feature 
+          icon={<Gamepad2 className="w-8 h-8" />}
+          title="Hilarious Gameplay"
+          description="STINK! is a comedic survival-action game where players use hilarious and disgusting abilities to fight off hordes of bathroom-themed monsters. The game combines resource management, skill upgrades, and character progression, culminating in an epic boss fight after a set survival time."
+        />
+        <Feature 
+          icon={<Users className="w-8 h-8" />}
+          title="Deep Storyline"
+          description="A surreal journey of self-discovery. Alessandro, burdened by betrayals and anger, is pulled into a surreal world where hostile toilets embody his deepest fears. Armed with unlikely tools, he must fight through this twisted reality, confronting the pain that has consumed him."
+        />
+        <Feature 
+          icon={<Heart className="w-8 h-8" />}
+          title="Deeper Meaning"
+          description="This game was born from authentic pain but aims to transform that pain into something constructive and entertaining. It's a love letter to anyone wrestling with their inner demons, a reminder that even the 'dirtiest' emotions can become powerful tools for healing. Sometimes, to move forward, we must 'return the shit' we were forced to swallow—even if only in a video game."
+        />
+      </div>
+    </div>
+  </div>
+</section>
     </div>
   );
 };

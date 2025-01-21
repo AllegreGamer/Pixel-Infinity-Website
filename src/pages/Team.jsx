@@ -108,9 +108,12 @@ const Team = () => {
             <p className="text-gray-300 mb-8">
               We're always looking for talented individuals who share our passion for creating amazing games.
             </p>
-            <button className="bg-primary hover:bg-secondary px-8 py-3 rounded-full font-semibold transition-colors">
-              Contact Us
-            </button>
+            <a 
+  href="mailto:pixelinfinitystudios@gmail.com" 
+  className="inline-block bg-primary hover:bg-secondary px-8 py-3 rounded-full font-semibold transition-colors cursor-pointer"
+>
+  Contact Us
+</a>
           </motion.div>
         </div>
       </section>
