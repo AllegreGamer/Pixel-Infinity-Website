@@ -31,7 +31,7 @@ const teamMembers = [
     image: "/images/Simone.jpg"
   },
   {
-    name: "Ken He",
+    name: "Peter Petrov",
     role: "Game Developer",
     bio: "Skilled developer bringing technical expertise and innovation to our game projects.",
     icon: <Terminal className="w-6 h-6" />,
