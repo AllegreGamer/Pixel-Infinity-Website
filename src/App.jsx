@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Games from './pages/Games';
+import TheHostage from './pages/TheHostage';
 import Stink from './pages/Stink';
 import Team from './pages/Team';
 import Navbar from './components/Navbar';
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/games" element={<Games />} />
+            <Route path="/games/the-hostage" element={<TheHostage />} />
             <Route path="/games/stink" element={<Stink />} />
             <Route path="/team" element={<Team />} />
           </Routes>

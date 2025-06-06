@@ -4,6 +4,14 @@ import { Link } from 'react-router-dom';
 const Games = () => {
   const games = [
     {
+      title: "The Hostage",
+      logo: "/images/thehostage-logo.png",
+      description: "A retro-styled psychological thriller where every choice matters. Make 100 binary decisions to save a hostage—yourself.",
+      image: "/images/thehostage-moodboard.png",
+      status: "In Development",
+      path: "/games/the-hostage"
+    },
+    {
       title: "STINK!",
       logo: "/images/stink-logo.png",
       description: "A survival-action rogue-like shooter that dares to be bold, hilarious, and disgustingly fun. Face hordes of bathroom-themed monsters using outrageous abilities!",

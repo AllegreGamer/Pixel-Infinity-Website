@@ -105,7 +105,7 @@ const Home = () => {
               <TeamMember name="Aslan Sepe" role="Music Producer" />
               <TeamMember name="Anya Filipenko" role="2D Artist" />
               <TeamMember name="Simone Artibani" role="Marketing Specialist" />
-              <TeamMember name="Ken He" role="Game Developer" />
+              <TeamMember name="Peter Petrov" role="Game Developer" />
               <TeamMember name="Giuseppe & Gennaro" role="Quality Assurance" />
             </div>
           </div>
@@ -116,6 +116,49 @@ const Home = () => {
 <section className="py-20 px-4 bg-gray-900">
   <div className="max-w-6xl mx-auto">
     <h2 className="text-4xl font-bold text-white mb-12 text-center">Our Games</h2>
+    
+    {/* Primo Gioco - The Hostage */}
+    <div className="bg-gray-800 rounded-2xl p-8 shadow-xl mb-12">
+      <Link to="/games/the-hostage" className="block">
+        <img 
+          src="/images/thehostage-logo.png" 
+          alt="The Hostage" 
+          className="max-w-xs mx-auto mb-6 hover:scale-105 transition-transform duration-300"
+        />
+      </Link>
+      <p className="text-gray-300 mb-6 text-center">
+        A retro-styled psychological thriller where every choice matters. Make 100 binary decisions to save a hostage—yourself. Test your luck in this dark, addictive experience that questions the nature of chance and control.
+      </p>
+      <div className="flex justify-center mb-8">
+        <a 
+          href="https://store.steampowered.com/app/YOUR_HOSTAGE_APP_ID" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="bg-[#171a21] hover:bg-[#2a475e] text-white px-6 py-2 rounded-full transition-colors"
+        >
+          Wishlist on Steam
+        </a>
+      </div>
+      <div className="grid md:grid-cols-3 gap-6">
+        <Feature 
+          icon={<Gamepad2 className="w-8 h-8" />}
+          title="Psychological Gameplay"
+          description="Simple yet intense binary choices that test your luck and decision-making. With over 100 unique death animations and roguelike progression through collectible talismans, every failure becomes a new discovery in this dark collection game."
+        />
+        <Feature 
+          icon={<Users className="w-8 h-8" />}
+          title="Deep Philosophy"
+          description="A profound exploration of chance, control, and self-rescue. You're not saving someone else—you're trying to save yourself. This game challenges our relationship with luck and questions whether we're truly in control of our destiny."
+        />
+        <Feature 
+          icon={<Heart className="w-8 h-8" />}
+          title="Meaningful Message"
+          description="More than entertainment, this is a critique of gambling culture and our dependence on chance. Through its retro aesthetic and educational content, the game delivers a powerful message about taking conscious action in life rather than relying on luck."
+        />
+      </div>
+    </div>
+
+    {/* Secondo Gioco - STINK! */}
     <div className="bg-gray-800 rounded-2xl p-8 shadow-xl">
       <Link to="/games/stink" className="block">
         <img 

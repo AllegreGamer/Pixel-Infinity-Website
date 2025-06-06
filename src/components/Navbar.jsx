@@ -8,6 +8,7 @@ const Navbar = () => {
   const isActive = (path) => location.pathname === path;
 
   const games = [
+    { title: "The Hostage", path: "/games/the-hostage" },
     { title: "STINK!", path: "/games/stink" },
     // Altri giochi possono essere aggiunti qui in futuro
   ];
