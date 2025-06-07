@@ -5,7 +5,7 @@ const TheHostage = () => {
   return (
     <div className="bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Hero Section with Logo */}
-      <section className="bg-white py-20">
+      <section className="py-20" style={{ backgroundColor: '#273238' }}>
         <div className="max-w-6xl mx-auto text-center">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -13,7 +13,7 @@ const TheHostage = () => {
             className="mb-12"
           >
             <img 
-              src="/images/thehostage-logo.png" 
+              src="/images/thehostage-logo3.png" 
               alt="The Hostage Logo" 
               className="max-w-md mx-auto"
             />

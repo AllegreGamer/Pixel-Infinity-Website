@@ -35,7 +35,7 @@ const teamMembers = [
     role: "Game Developer",
     bio: "Skilled developer bringing technical expertise and innovation to our game projects.",
     icon: <Terminal className="w-6 h-6" />,
-    image: "/images/Ken.jpg"
+    image: "/images/Peter.jpg"
   }
 ];
 

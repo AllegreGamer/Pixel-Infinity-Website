@@ -5,7 +5,7 @@ const Games = () => {
   const games = [
     {
       title: "The Hostage",
-      logo: "/images/thehostage-logo.png",
+      logo: "/images/thehostage-logo3.png",
       description: "A retro-styled psychological thriller where every choice matters. Make 100 binary decisions to save a hostage—yourself.",
       image: "/images/thehostage-moodboard.png",
       status: "In Development",
@@ -64,7 +64,7 @@ const Games = () => {
                       <img 
                         src={game.logo} 
                         alt={game.title}
-                        className="h-24 object-contain mb-6"
+                        className="h-60 object-contain mb-6"
                       />
                       <p className="text-gray-300 mb-6">
                         {game.description}
